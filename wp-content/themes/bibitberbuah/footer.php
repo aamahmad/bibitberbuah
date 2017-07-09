@@ -6,10 +6,10 @@
           <h4><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Informasi</h4>
           <strong>Kontak kami :</strong><br><br>
           <p>
-            <b>SMS/WA</b> : 085223399317<br>
-            <b>BBM</b> : 085223399317<br>
-            <b>Line</b> : 085223399317<br>
-            <b>Telegram</b> : 085223399317<br>
+            <b>SMS/WA</b> : <?php echo get_option('kontak_wa'); ?><br>
+            <b>BBM</b> : <?php echo get_option('kontak_bbm'); ?><br>
+            <b>Line</b> : <?php echo get_option('kontak_line'); ?><br>
+            <b>Telegram</b> : <?php echo get_option('kontak_telegram'); ?><br>
           </p>
 
       </div>

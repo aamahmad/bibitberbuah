@@ -17,14 +17,16 @@
   <div class="container">
     <div class="navbar-header">
           <center><div class="wakontak">
-            <img alt="WhatsApp" src="<?php echo get_bloginfo( 'template_directory' );?>/images/WhatsApp.png"> WA : 085223399317
+            <img alt="WhatsApp" src="<?php echo get_bloginfo( 'template_directory' );?>/images/WhatsApp.png"> WA / SMS : 
+            <?php echo get_option('kontak_wa'); ?>
           </div></center>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><center><div class="wakontak"><img alt="Call" src="<?php echo get_bloginfo( 'template_directory' );?>/images/call.png"> Call : 085223399317</div></center></li>
-        <li><center><div class="wakontak"><img alt="SMS" src="<?php echo get_bloginfo( 'template_directory' );?>/images/sms.png"> SMS : 085223399317</div></center></li>
-        <li><center><div class="wakontak"><img alt="BBM" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bbm.png"> BBM : DF23K9SS</div></center></li>
+        <li><center><div class="wakontak"><img alt="Call" src="<?php echo get_bloginfo( 'template_directory' );?>/images/call.png"> Call : <?php echo get_option('kontak_call'); ?></div></center></li>
+        <li><center><div class="wakontak"><img alt="SMS" src="<?php echo get_bloginfo( 'template_directory' );?>/images/sms.png"> Line : <?php echo get_option('kontak_wa'); ?></div></center></li>
+        <li><center><div class="wakontak"><img alt="BBM" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bbm.png"> BBM : <?php echo get_option('kontak_bbm'); ?></div></center></li>
+        <li><center><div class="wakontak"><img alt="BBM" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bbm.png"> Telegram : <?php echo get_option('kontak_bbm'); ?></div></center></li>
       </ul>
       
     </div><!--/.nav-collapse -->

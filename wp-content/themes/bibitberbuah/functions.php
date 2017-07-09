@@ -51,12 +51,11 @@ function the_breadcrumb() {
 	elseif (is_search()) {echo"<li>Search Results"; echo'</li>';}
 	echo '</ol>';
 }
-
 // end Breadcrumb
 
 
-// crop thubnail
 
+// crop thubnail
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
     add_image_size( 'category-thumb', 300 ); // 300 pixels wide (and unlimited height)
@@ -64,4 +63,74 @@ function wpdocs_theme_setup() {
 }
 
 add_image_size( 'custom-size', 150, 150, true ); 
-add_image_size( 'wordpress-thumbnail', 200, 200, TRUE );
+add_image_size( 'wordpress-thumbnail', 200, 200, TRUE ); // end crop thubmnail
+
+
+// Pengaturan Kontak Kami
+function pengaturan_kontak_kami() {
+  add_menu_page( 'Custom Settings', 'Kontak kami', 'manage_options', 'custom-settings', 'custome_kontak_page', null, 99 );
+}
+add_action( 'admin_menu', 'pengaturan_kontak_kami' );
+
+
+// ---
+function custome_kontak_page() { ?>
+  <div class="wrap">
+    <h1>Pengaturan Kontak Kami</h1>
+    <form method="post" action="options.php">
+       <?php
+           settings_fields( 'section' );
+           do_settings_sections( 'theme-options' );      
+           submit_button(); 
+       ?>          
+    </form>
+  </div>
+<?php }
+
+
+// Kontak WA/SMS
+function pengaturan_wa() { ?>
+  <input type="text" name="kontak_wa" id="kontak_wa" value="<?php echo get_option( 'kontak_wa' ); ?>" />
+<?php }
+
+// Kontak call
+function pengaturan_call() { ?>
+  <input type="text" name="kontak_call" id="kontak_call" value="<?php echo get_option( 'kontak_call' ); ?>" />
+<?php }
+
+// Kontak bbm
+function pengaturan_bbm() { ?>
+  <input type="text" name="kontak_bbm" id="kontak_bbm" value="<?php echo get_option( 'kontak_bbm' ); ?>" />
+<?php }
+
+// Kontak Line
+function pengaturan_line() { ?>
+  <input type="text" name="kontak_line" id="kontak_line" value="<?php echo get_option( 'kontak_line' ); ?>" />
+<?php }
+
+// Kontak Telegram
+function pengaturan_telegram() { ?>
+  <input type="text" name="kontak_telegram" id="kontak_telegram" value="<?php echo get_option( 'kontak_telegram' ); ?>" />
+<?php }
+
+// menambahlan field kontak
+function custom_settings_page_setup() {
+  add_settings_section( 'section', 'Kontak Kami', null, 'theme-options' );
+  	add_settings_field( 'kontak_wa', 'WA / SMS', 'pengaturan_wa', 'theme-options', 'section' );
+  	add_settings_field( 'kontak_call', 'Call', 'pengaturan_call', 'theme-options', 'section' );
+  	add_settings_field( 'kontak_bbm', 'BBM', 'pengaturan_bbm', 'theme-options', 'section' );
+  	add_settings_field( 'kontak_line', 'Line', 'pengaturan_line', 'theme-options', 'section' );
+  	add_settings_field( 'kontak_telegram', 'Telegram', 'pengaturan_telegram', 'theme-options', 'section' );
+
+  	register_setting('section', 'kontak_wa');
+  	register_setting('section', 'kontak_call');
+  	register_setting('section', 'kontak_bbm');
+  	register_setting('section', 'kontak_line');
+  	register_setting('section', 'kontak_telegram');
+}
+add_action( 'admin_init', 'custom_settings_page_setup' );
+
+// utuk tampil di web
+
+
+// end pengaturan
