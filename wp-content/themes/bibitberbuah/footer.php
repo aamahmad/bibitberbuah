@@ -3,27 +3,21 @@
     <div class="row">
 
       <div class="col-xs-6 col-sm-3">
-          <h4>Support Me</h4>
-          <address>
-            <strong>Twitter, Inc.</strong><br>
-            1355 Market Street, Suite 900<br>
-            San Francisco, CA 94103<br>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
-          </address>
+          <h4><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Informasi</h4>
+          <strong>Kontak kami :</strong><br><br>
+          <p>
+            <b>SMS/WA</b> : 085223399317<br>
+            <b>BBM</b> : 085223399317<br>
+            <b>Line</b> : 085223399317<br>
+            <b>Telegram</b> : 085223399317<br>
+          </p>
 
-          <address>
-            <strong>Full Name</strong><br>
-            <a href="mailto:#">first.last@example.com</a>
-          </address>
       </div>
 
       <div class="col-xs-6 col-sm-3">
-          <h4>Support Me</h4>
+          <h4><span class="glyphicon glyphicon-road" aria-hidden="true"></span>   Pengiriman</h4>
           <ul class="list-unstyled">
-            <li>Kategori1</li>
-            <li>Kategori1</li>
-            <li>Kategori1</li>
-            <li>Kategori1</li>
+            <li><img width="50%" src="<?php echo get_bloginfo( 'template_directory' );?>/images/cargo.jpg"></li>
           </ul>
       </div>
 
@@ -31,8 +25,13 @@
       <div class="clearfix visible-xs"></div>
 
       <div class="col-xs-6 col-sm-3">
-          <h4>Support</h4>
-          <ul class="list-unstyled"></ul>
+          <h4><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>   Rekening Bank</h4>
+          <ul class="list-unstyled">
+            <li><img width="50%" src="<?php echo get_bloginfo( 'template_directory' );?>/images/mandiri.jpg"></li>
+            <li><img width="50%" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bri.png"></li>
+            <li><img width="50%" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bca.jpg"></li>
+            <li><img width="50%" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bsm.jpg"></li>
+          </ul>
       </div>
 
       <div class="col-xs-6 col-sm-3">
@@ -61,17 +60,7 @@
     <script src="../../assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-    $(document).ready(function() {
-  $("#nav1 li").hover(
-    function() {
-      $(this).find('ul').slideDown();
-    },
-    function() {
-      $(this).find('ul').slideUp();
-    });
-});
-    </script>
+
 <?php wp_footer(); ?>
   </body>
 </html>
