@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
-  <div class="row">  
+
 
 <?php
 $categories = get_categories( array(
@@ -17,7 +16,8 @@ foreach( $categories as $category ) {
         esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
         esc_html( $category->name )
     );?>
-        
+        <div class="container">
+            <div class="row">  
         <!-- our-products-area start -->
         <div class="linebehind">
             <h2><span><?php echo sprintf( esc_html__( '%s', 'textdomain' ), $category_link );?></span></h2>
@@ -44,12 +44,12 @@ foreach( $categories as $category ) {
                         <?php endwhile; endif; wp_reset_postdata();?>
                     <!-- loop produkbusana end -->
         <!-- our-products-area end -->
-
+            </div>
+        </div><!-- /.container -->
     <?php
 }?>
 
 
-  </div>
-</div><!-- /.container -->
+ 
 
 <?php get_footer(); ?>
