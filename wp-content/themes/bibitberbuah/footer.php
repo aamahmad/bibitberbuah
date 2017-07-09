@@ -18,6 +18,7 @@
           <h4><span class="glyphicon glyphicon-road" aria-hidden="true"></span>   Pengiriman</h4>
           <ul class="list-unstyled">
             <li><img width="50%" src="<?php echo get_bloginfo( 'template_directory' );?>/images/cargo.jpg"></li>
+            <li><img width="50%" src="<?php echo get_bloginfo( 'template_directory' );?>/images/jne.jpg"></li>
           </ul>
       </div>
 

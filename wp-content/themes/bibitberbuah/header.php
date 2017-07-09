@@ -26,12 +26,7 @@
         <li><center><div class="wakontak"><img alt="SMS" src="<?php echo get_bloginfo( 'template_directory' );?>/images/sms.png"> SMS : 085223399317</div></center></li>
         <li><center><div class="wakontak"><img alt="BBM" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bbm.png"> BBM : DF23K9SS</div></center></li>
       </ul>
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Cari bibit / tanaman">
-        </div>
-          <button type="submit" class="btn btn-success">Cari</button>
-      </form>
+      
     </div><!--/.nav-collapse -->
   </div>
 </nav>
@@ -42,8 +37,16 @@
 
       <div class="col-md-4">
         <div class="logobibit">
-        <center><img alt="bibitberbuah.com" width="80%" style="float:left;" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bibit2.png"></center>
+        <center><img alt="bibitberbuah.com" width="50%" style="float:left;" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bibit2.png"></center>
         </div>
+
+        <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Cari bibit / tanaman">
+        </div>
+          <button type="submit" class="btn btn-success">Cari</button>
+        </form>
+
       </div>
 
       <div class="col-md-8">

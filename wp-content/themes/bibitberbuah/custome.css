@@ -39,7 +39,7 @@ footer {
 }
 
 .jumbotron {
-  padding-top: 0px;
+  padding-top:  0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
   background-color: #174D74;
@@ -106,7 +106,7 @@ footer {
 }
 
 .menutengah {
-
+  margin-bottom: 15px;
 }
 
 .menutengah nav {
@@ -329,7 +329,7 @@ comment list
 }
 .linebehind h2{
     font: 24px sans-serif;
-    margin-top: 30px;
+    margin-top: 10px;
     position: relative;
     text-align: center;
     text-transform: capitalize;
@@ -439,4 +439,12 @@ comment list
 }
 .single-sidebar-widget .menu-list ul li a:hover{
   color:#00aadc;
+}
+
+.breadcrumb {
+  border-radius: 0px;
+}
+
+.judulproduk h4{
+  color: #000000;
 }

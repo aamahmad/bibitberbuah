@@ -1,6 +1,8 @@
 <div class="col-md-9">
 <?php the_breadcrumb(); ?> 
-<h4><?php the_title(); ?></h4>
+<div class="judulproduk">
+	<h4 ><?php the_title(); ?></h4>
+</div>
           <div class="row">
             <div class="col-md-4">
             	<a href="#" class="thumbnail">
