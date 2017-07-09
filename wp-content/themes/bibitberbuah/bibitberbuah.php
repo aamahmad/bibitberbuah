@@ -2,7 +2,9 @@
       <div class="product-card">
         <div class="product-display">
           <div class="product-media">
-            <a href="<?php the_permalink(); ?>"><img src="http://bibitmurah.net/wp-content/uploads/2015/12/Bibit-Bunga-Zinnia-Luminosa-Pink-Z05-300x300-300x300.jpg"></a>                                                    
+            <a href="<?php the_permalink(); ?>">
+               <img src="<?php the_post_thumbnail_url(); ?>">
+            </a>
           </div>
           <div class="product-deskcription">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
