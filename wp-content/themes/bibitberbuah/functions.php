@@ -6,6 +6,20 @@ add_theme_support( 'title-tag' );
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
 
+add_filter('pre_get_posts', 'query_post_type');
+
+function query_post_type($query) {
+  if( is_category() ) {
+    $post_type = get_query_var('post_type');
+    if($post_type)
+        $post_type = $post_type;
+    else
+        $post_type = array('nav_menu_item', 'post', 'bibitberbuah'); // don't forget nav_menu_item to allow menus to work!
+    $query->set('post_type',$post_type);
+    return $query;
+    }
+}
+
 // Add scripts and stylesheets
 function startwordpress_scripts() {
 	wp_enqueue_style( 'bootstrap_min', get_template_directory_uri() . '/css/bootstrap.min.css');
@@ -134,3 +148,13 @@ add_action( 'admin_init', 'custom_settings_page_setup' );
 
 
 // end pengaturan
+
+
+function tag_filter($query) {
+  if ( !is_admin() && $query->is_main_query() ) {
+    if ($query->is_tag) {
+      $query->set('post_type', array( 'bibitberbuah', ));
+    }
+  }
+}
+add_action('pre_get_posts','tag_filter');
