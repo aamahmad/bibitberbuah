@@ -63,6 +63,12 @@
 				  </div>
 				</div>
 
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Produk Sejenis </h3>
+					</div>
+				<div class="panel-body">
+
 				<!-- begin custom related loop, -->
 								<?php
 						        
@@ -91,18 +97,26 @@
 
 									<?php while ( $related_items->have_posts() ) : $related_items->the_post(); ?>
 						            
-						      		<div class="single-product">
-										<div class="product-img">
-											<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="New Products" /></a>
-											<div class="product-overlay"></div>
-											<a class="quick-view modal-view" href="#" data-toggle="modal" data-target="#<?php the_ID(); ?>"><i class="pe-7s-search"></i></a>
-										</div>
-										<div class="product-info">
-											<h3 class="product-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-											<span class="product-price"> <span>Rp&nbsp;<?php echo esc_html( get_post_meta( get_the_ID(), 'olshop_harga', true ) ); ?></span></span>
-											<a href="<?php the_permalink(); ?>" class="cart-btn">beli sekarang</a>
-										</div>
-									</div><!-- /.single-product -->
+
+							      		<div class="col-xs-6 col-md-3">
+									      <div class="product-card">
+									            <div class="product-display">
+									              <div class="product-media">
+									                <a href="<?php the_permalink(); ?>">
+									                   <img src="<?php the_post_thumbnail_url(); ?>">
+									                </a>
+									              </div>
+									              <div class="product-deskcription">
+									                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+									                <p><?php echo esc_html( get_post_meta( get_the_ID(), 'olshop_harga', true ) );?></p>
+									              </div>
+									              <a href="<?php the_permalink(); ?>">
+									              <div class="product-checkout">
+									              <p>Beli / Lihat Detail</p></div>
+									              </a>
+									            </div>
+									      </div>
+									    </div>		<!-- /.single-product -->
 						 
 									<?php endwhile; ?>
 						 
@@ -113,7 +127,9 @@
 						        // Reset Post Data
 						        wp_reset_postdata();
 						        ?> 
-								<!-- end custom related loop, -->
+				<!-- end custom related loop, -->
+				</div>
+				</div>
             </div>
 
           </div>
