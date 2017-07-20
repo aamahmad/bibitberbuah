@@ -21,6 +21,8 @@
 			<!-- content of loop -->
 			<?php if (have_posts() ) : while (have_posts() ) : the_post(); 
 				get_template_part('bibitberbuah-single', get_post_format() );
+
+				setPostViews(get_the_ID()); 
 			endwhile; endif; ?>
 			<!-- Content blog post end-->
 

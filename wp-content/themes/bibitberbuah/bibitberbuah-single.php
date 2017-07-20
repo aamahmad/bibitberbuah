@@ -16,7 +16,7 @@
 				    <tbody>
 				      <tr>
 				        <td>Kategori</td>
-				        <td>: -</td>
+				        <td>: <?php the_category(' ','single',''); ?></td>
 				      </tr>
 				      <tr>
 				        <td>Berat</td>
@@ -28,7 +28,7 @@
 				      </tr>
 				      <tr>
 				        <td>Dilihat</td>
-				        <td>: -</td>
+				        <td>: <?php echo getPostViews(get_the_ID()); ?></td>
 				      </tr>
 				      <tr>
 				        <td><b>Harga</b></td>
@@ -41,13 +41,20 @@
             </div>
             <div class="col-md-4">
             	<div class="pemesanan">
-            		<h2>Pemesanan</h2>
-            		<p>Jika Tertarik dengan produk ini langsung menghubungi kami via :</p>
+            		<h2>Format Pemesanan</h2>
+            		<p>Jika Tertarik dengan produk ini langsung menghubungi kami dengan format :</p>
             		<p>
-            			<b>SMS/WA</b> : <?php echo get_option('kontak_wa'); ?><br>
-            			<b>BBM</b> : <?php echo get_option('kontak_bbm'); ?><br>
-            			<b>Line</b> : <?php echo get_option('kontak_line'); ?><br>
-            			<b>Telegram</b> : <?php echo get_option('kontak_telegram'); ?><br>
+            			<b>Ketik (SMS/WA):</b><br>
+            			ORDERBIBIT#NAMA#JUDUL PPRODUK
+            		</p>
+
+            		<p>
+            			<b>Kirim Ke :</b><br>
+            			<?php echo get_option('kontak_wa'); ?><br>
+            		</p>
+
+            		<p>
+            			<b>* wajib pake format diatas utk mempermudah pencarian data,</b>
             		</p>
 
             	</div>
