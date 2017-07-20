@@ -24,7 +24,7 @@
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><center><div class="wakontak"><img alt="Call" src="<?php echo get_bloginfo( 'template_directory' );?>/images/call.png"> Call : <?php echo get_option('kontak_call'); ?></div></center></li>
-        <li><center><div class="wakontak"><img alt="SMS" src="<?php echo get_bloginfo( 'template_directory' );?>/images/Line.png"> Line : <?php echo get_option('kontak_wa'); ?></div></center></li>
+        <li><center><div class="wakontak"><img alt="SMS" src="<?php echo get_bloginfo( 'template_directory' );?>/images/line.png"> Line : <?php echo get_option('kontak_wa'); ?></div></center></li>
         <li><center><div class="wakontak"><img alt="BBM" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bbm.png"> BBM : <?php echo get_option('kontak_bbm'); ?></div></center></li>
         <li><center><div class="wakontak"><img alt="Telegram" src="<?php echo get_bloginfo( 'template_directory' );?>/images/telegram.png"> Telegram : <?php echo get_option('kontak_telegram'); ?></div></center></li>
       </ul>

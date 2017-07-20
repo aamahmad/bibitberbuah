@@ -331,7 +331,7 @@ comment list
     font: 24px sans-serif;
     margin-top: 10px;
     position: relative;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
     z-index: 1;
 }
