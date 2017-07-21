@@ -28,7 +28,7 @@ foreach( $categories as $category ) {
                         $kategori = esc_attr( sprintf( __( '%s', 'textdomain' ), $category->slug ));
 
                         $args = array(
-                            'posts_per_page' => 6,
+                            'posts_per_page' => 1,
                             'paged' => $paged,
                             'post_type' => 'bibitberbuah',
                             'category_name' => $kategori,
@@ -45,7 +45,20 @@ foreach( $categories as $category ) {
                     <!-- loop produkbusana end -->
         <!-- our-products-area end -->
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <button type="button" class="btn btn-default btn-xs">
+                     
+                            <a class="selengkapnya" href="<?php bloginfo('wpurl');?>/category/<?php echo $kategori;?>/"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Lihat Produk Lainnya.....</a>
+                        
+                    </button>
+                    
+                </div>
+            </div>
+
         </div><!-- /.container -->
+        
     <?php
 }?>
 
