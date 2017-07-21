@@ -43,16 +43,34 @@ foreach( $categories as $category ) {
                                                      
                         <?php endwhile; endif; wp_reset_postdata();?>
                     <!-- loop produkbusana end -->
+
+                    <div class="col-xs-6 col-md-3">  
+
+                      <div class="product-card2">
+                        <div class="product-display">
+                            <div class="product-media" style="margin-top: 40px;">
+                                <a href="<?php echo get_bloginfo( 'wpurl' );?>/category/<?php echo $kategori; ?>">
+                                    <img src="http://infopromodiskon.com/userfiles/uploads/baca-selengkapnya.png">
+                                </a>
+                            </div>
+
+                            <a href="<?php echo get_bloginfo( 'wpurl' );?>/category/<?php echo $kategori; ?>">
+                            <div class="product-checkout">
+                            <p>Lihat Produk Lainnya >>></p></div>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+
         <!-- our-products-area end -->
             </div>
             <div class="row">
                 <div class="col-md-12">
                     
-                    <button type="button" class="btn btn-default btn-xs">
+                  
                      
-                            <a class="selengkapnya" href="<?php bloginfo('wpurl');?>/category/<?php echo $kategori;?>/"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Lihat Produk Lainnya.....</a>
-                        
-                    </button>
+                   
+
                     
                 </div>
             </div>

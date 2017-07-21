@@ -43,7 +43,7 @@
 									        <li>
 									        <a href="<?php echo esc_url( get_category_link( $subcategory->term_id ) );?>">
 											<?php echo esc_html( $subcategory->name );?>
-									       	<span class="qty">(<?php echo esc_html( $subcategory->count );?>)</span>
+									       	<span class="label label-default qty"><?php echo esc_html( $subcategory->count );?></span></h3>
 									        </a>
 									        </li>
 										<?php }

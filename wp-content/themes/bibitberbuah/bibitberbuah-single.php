@@ -61,7 +61,7 @@
             </div>
 
             <div class="col-md-12">
-	            <div class="panel panel-default">
+	            <div class="panel panel-primary">
 				  <div class="panel-heading">
 				    <h3 class="panel-title">Penjelasan <?php the_title(); ?> </h3>
 				  </div>
@@ -70,7 +70,7 @@
 				  </div>
 				</div>
 
-				<div class="panel panel-info">
+				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Produk Sejenis </h3>
 					</div>

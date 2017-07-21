@@ -234,6 +234,11 @@ comment list
    
 }
 
+.roduct-card .product-display-readmore {
+    margin-top: 100px;
+}
+
+
 .product-media {
   width: 
 }
@@ -318,7 +323,6 @@ comment list
   margin-top: 4px;
   text-align: center;
 }
-
 
 /*
  * Line behind title
@@ -448,3 +452,5 @@ comment list
 .judulproduk h4{
   color: #000000;
 }
+
+

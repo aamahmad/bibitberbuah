@@ -29,6 +29,9 @@
 
 		<?php endif; ?>
 		</div>
+
+		<?php wpbeginner_numeric_posts_nav(); ?>
+		
 	</div>
 
 	<div class="col-md-3">
