@@ -28,7 +28,7 @@ foreach( $categories as $category ) {
                         $kategori = esc_attr( sprintf( __( '%s', 'textdomain' ), $category->slug ));
 
                         $args = array(
-                            'posts_per_page' => 1,
+                            'posts_per_page' => 10,
                             'paged' => $paged,
                             'post_type' => 'bibitberbuah',
                             'category_name' => $kategori,
