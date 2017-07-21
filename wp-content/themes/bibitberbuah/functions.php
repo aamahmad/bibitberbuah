@@ -260,3 +260,5 @@ function wpbeginner_numeric_posts_nav() {
 }
 
 // end halaman postingan
+
+

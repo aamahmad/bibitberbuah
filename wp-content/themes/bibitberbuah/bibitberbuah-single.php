@@ -63,7 +63,7 @@
             <div class="col-md-12">
 	            <div class="panel panel-primary">
 				  <div class="panel-heading">
-				    <h3 class="panel-title">Penjelasan <?php the_title(); ?> </h3>
+				    <h3 class="panel-title"><b>Detail <?php the_title(); ?> </b></h3>
 				  </div>
 				  <div class="panel-body">
 				    <?php the_content(); ?>
