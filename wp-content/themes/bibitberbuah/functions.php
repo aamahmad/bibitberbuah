@@ -110,7 +110,6 @@ function pengaturan_wa() { ?>
 function pengaturan_call() { ?>
   <input type="text" name="kontak_call" id="kontak_call" value="<?php echo get_option( 'kontak_call' ); ?>" />
 <?php }
-
 // Kontak bbm
 function pengaturan_bbm() { ?>
   <input type="text" name="kontak_bbm" id="kontak_bbm" value="<?php echo get_option( 'kontak_bbm' ); ?>" />
