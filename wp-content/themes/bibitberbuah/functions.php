@@ -1,5 +1,4 @@
 <?php
-
 // WordPress Titles
 add_theme_support( 'title-tag' );
 
@@ -262,3 +261,4 @@ function wpbeginner_numeric_posts_nav() {
 // end halaman postingan
 
 
+?>

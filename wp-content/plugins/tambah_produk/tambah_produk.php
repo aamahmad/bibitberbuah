@@ -8,7 +8,6 @@ Author: aamDev
 Author URI: http://bibitberbuah.com
 License: GPLv2
 */
-
 add_action( 'init', 'tambah_produk' );
 
 function tambah_produk() {

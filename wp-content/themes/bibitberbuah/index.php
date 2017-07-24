@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 <?php
 $categories = get_categories( array(
     'order'   => 'DESC',
